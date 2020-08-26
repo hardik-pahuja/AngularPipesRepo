@@ -1,0 +1,53 @@
+<h1>STRING PIPE</h1>
+<h2>{{title| uppercase}}</h2>
+<h3>{{title| lowercase}}</h3>
+<h3>{{title| titlecase}}</h3>
+
+<br><br><br><br>
+
+<h1>DATE PIPE</h1>
+<h2>Today is {{today}}</h2>
+<h3>Today is {{today| date:'short'}}</h3>
+<h3>Today is {{today| date:'full'}}</h3>
+<h3>Today is {{today| date:'y/M/d'}}</h3>
+<!-- M stands for month -->
+
+<br><br><br><br>
+
+<h1>JSON PIPE</h1>
+<h2>{{student | json}}</h2>
+
+<br><br><br><br>
+
+<h1>CURRENCY PIPE</h1>
+<h2>{{money | currency:'USD'}}</h2>
+<h2>{{money | currency:'INR'}}</h2>
+<h2>{{money | currency:'EUR'}}</h2>
+<h2>{{money | currency:'AUD'}}</h2>
+
+<br><br><br><br>
+
+<h1>PERCENTAGE PIPE</h1>
+<h2>{{marks | percent}}</h2>
+
+<br><br><br><br>
+
+<h1>DECIMAL PIPE</h1>
+<h2>{{age | number}}</h2>
+
+<br><br><br><br>
+
+<h1>SLICE PIPE</h1>
+<h2>{{weekDays}}</h2>
+<h2>{{weekDays | slice:2:5}}</h2>
+<h2>{{weekDays | slice:2}}</h2>
+<h2>{{name}}</h2>
+<h2>{{name | slice:3:8}}</h2>
+
+<br><br><br><br>
+
+<h1>CUSTOMISED PIPE</h1>
+<h2>{{25 | sqrt}}</h2>
+<h2>{{num | sqrt}}</h2>
+
+<router-outlet></router-outlet>
